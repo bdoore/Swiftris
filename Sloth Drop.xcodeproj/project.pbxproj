@@ -40,6 +40,7 @@
 		B7B4ACDE1A0EE7E5008BA39E /* GameSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4ACDD1A0EE7E5008BA39E /* GameSelectViewController.swift */; };
 		B7B4ACE01A11F1BB008BA39E /* ClassicGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B4ACDF1A11F1BB008BA39E /* ClassicGameViewController.swift */; };
 		B7B4ACE21A140CF8008BA39E /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B4ACE11A140CF8008BA39E /* GameKit.framework */; };
+		B7D62F151A1EE4720051310A /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D62F141A1EE4720051310A /* EndGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		B7B4ACDD1A0EE7E5008BA39E /* GameSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectViewController.swift; sourceTree = "<group>"; };
 		B7B4ACDF1A11F1BB008BA39E /* ClassicGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicGameViewController.swift; sourceTree = "<group>"; };
 		B7B4ACE11A140CF8008BA39E /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B7D62F141A1EE4720051310A /* EndGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				B7B4ACDD1A0EE7E5008BA39E /* GameSelectViewController.swift */,
 				B7B4AC901A0A9E38008BA39E /* TimedGameViewController.swift */,
 				B7B4ACDF1A11F1BB008BA39E /* ClassicGameViewController.swift */,
+				B7D62F141A1EE4720051310A /* EndGameViewController.swift */,
 				B7B4ACC71A0AC854008BA39E /* Array2D.swift */,
 				B7B4AC921A0A9E38008BA39E /* Main.storyboard */,
 				B7B4AC951A0A9E38008BA39E /* Images.xcassets */,
@@ -326,6 +329,7 @@
 				B7B4ACD61A0C6F8B008BA39E /* JShape.swift in Sources */,
 				B7B4ACDC1A0C761C008BA39E /* Swiftris.swift in Sources */,
 				B7B4ACE01A11F1BB008BA39E /* ClassicGameViewController.swift in Sources */,
+				B7D62F151A1EE4720051310A /* EndGameViewController.swift in Sources */,
 				B7B4ACC81A0AC854008BA39E /* Array2D.swift in Sources */,
 				B7B4ACD21A0C6E9F008BA39E /* LineShape.swift in Sources */,
 				B7B4ACD41A0C6EEE008BA39E /* LShape.swift in Sources */,
@@ -533,6 +537,7 @@
 				B7B4ACAA1A0A9E38008BA39E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7B4ACAB1A0A9E38008BA39E /* Build configuration list for PBXNativeTarget "Sloth DropTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +546,7 @@
 				B7B4ACAD1A0A9E38008BA39E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
         <!--End Game View Controller-->
         <scene sceneID="Zay-bQ-PfY">
             <objects>
-                <viewController title="End Game View Controller" id="77n-GP-TYl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EndGameViewController" title="End Game View Controller" id="77n-GP-TYl" customClass="EndGameViewController" customModule="Sloth_Drop" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="olV-MU-o9O"/>
                         <viewControllerLayoutGuide type="bottom" id="mEv-Lh-Ir3"/>
@@ -15,14 +15,65 @@
                     <view key="view" contentMode="scaleToFill" id="6GM-ZQ-5cq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYe-B0-8bo">
+                                <rect key="frame" x="115" y="500" width="90" height="30"/>
+                                <state key="normal" title="Game Select">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gaemSelectPressed:" destination="77n-GP-TYl" eventType="touchUpInside" id="uVT-pr-jJL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGr-2p-yxe">
+                                <rect key="frame" x="160" y="382" width="160" height="30"/>
+                                <state key="normal" title="View Leaderboards">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leaderboardsPressed:" destination="77n-GP-TYl" eventType="touchUpInside" id="CT9-g3-fQe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-X3-szk">
+                                <rect key="frame" x="110" y="202" width="100" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Your Score:">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hg-rs-15Z">
+                                <rect key="frame" x="85" y="250" width="150" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwE-Zt-W6t">
+                                <rect key="frame" x="0.0" y="382" width="160" height="30"/>
+                                <state key="normal" title="Challenge Friends">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="challengePressed:" destination="77n-GP-TYl" eventType="touchUpInside" id="d6u-OJ-7Qo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="5hg-rs-15Z" id="hkC-dX-fN0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcU-V4-g3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="876"/>
+            <point key="canvasLocation" x="996" y="868"/>
         </scene>
         <!--Game Select View Controller-->
         <scene sceneID="I5F-l4-LfG">
@@ -36,15 +87,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyY-qN-jIV">
-                                <rect key="frame" x="107" y="245" width="106" height="30"/>
-                                <state key="normal" title="Timed Mode">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="LVB-YS-i5n" kind="presentation" identifier="timed" id="akY-t0-cfd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRg-gO-4Pn">
                                 <rect key="frame" x="103" y="131" width="115" height="30"/>
                                 <state key="normal" title="Classic Mode">
@@ -52,6 +94,15 @@
                                 </state>
                                 <connections>
                                     <segue destination="LVB-YS-i5n" kind="presentation" identifier="classic" id="9vH-R4-zBa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyY-qN-jIV">
+                                <rect key="frame" x="107" y="245" width="106" height="30"/>
+                                <state key="normal" title="Timed Mode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="presentation" identifier="timed" id="akY-t0-cfd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,6 +193,15 @@
                                     </label>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-F8-lVc">
+                                <rect key="frame" x="137" y="499" width="46" height="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressPause:" destination="LVB-YS-i5n" eventType="touchUpInside" id="pSg-IF-1YZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -159,6 +219,7 @@
                         <outlet property="timeBox" destination="ImZ-v1-Wjg" id="l0q-lV-Cna"/>
                         <outlet property="timeLabel" destination="jLh-po-Mbm" id="gqG-Pv-vke"/>
                         <segue destination="77n-GP-TYl" kind="presentation" identifier="endGame" id="86C-ar-jWD"/>
+                        <segue destination="1dH-sN-DYl" kind="presentation" identifier="newGame" id="flK-Op-k2Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
@@ -282,6 +343,6 @@
         <image name="whitebg.png" width="84" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9vH-R4-zBa"/>
+        <segue reference="akY-t0-cfd"/>
     </inferredMetricsTieBreakers>
 </document>

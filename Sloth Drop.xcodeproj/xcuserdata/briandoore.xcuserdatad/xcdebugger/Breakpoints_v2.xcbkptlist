@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sloth Drop/TimedGameViewController.swift"
-            timestampString = "437675335.699769"
+            filePath = "Sloth Drop/EndGameViewController.swift"
+            timestampString = "438287071.41899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "reportScore()"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "challengeforScore(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

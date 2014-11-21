@@ -22,6 +22,8 @@ class GameScene: SKScene {
     var tickLengthMillis = TickLengthLevelOne
     var lastTick:NSDate?
     
+    var isPaused = false
+    
     
     
     var textureCache = Dictionary<String, SKTexture>()

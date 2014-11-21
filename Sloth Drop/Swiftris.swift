@@ -39,8 +39,9 @@ protocol SwiftrisDelegate {
     // Invoked when the falling shape has changed its location after being dropped
     func gameShapeDidDrop(swiftris: Swiftris)
     
-    // Invoked when the game has reached a new level
+    // Invoked when the game has reached a newlevel
     func gameDidLevelUp(swiftris: Swiftris)
+    
 }
 
 class Swiftris {
@@ -48,6 +49,8 @@ class Swiftris {
     var nextShape:Shape?
     var fallingShape:Shape?
     var delegate:SwiftrisDelegate?
+    
+    var gameIsPaused = false
     
     var score:Int
     var level:Int
@@ -281,6 +284,10 @@ class Swiftris {
             allBlocks.append(rowOfBlocks)
         }
         return allBlocks
+    }
+    
+    func pauseGame() {
+        
     }
     
     
